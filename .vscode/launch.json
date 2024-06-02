@@ -5,6 +5,19 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Attach to Kubernetes Pod (Python)",
+            "type": "cloudcode.kubernetes",
+            "request": "attach",
+            "language": "Python",
+            "debugPort": 3000,
+            "podSelector": {
+                "app": "deployment-name"
+            },
+            "localRoot": "${workspaceFolder}",
+            "remoteRoot": "Path to the Remote Directory Containing the Program"
+        },
+        
+        {
             "name": "Deploy Cloud Function",
             "type": "cloudcode.cloudfunctions",
             "request": "launch",
@@ -13,6 +26,19 @@
             "runtime": "",
             "entryPoint": "",
             "testInput": ""
+        }, 
+         
+        {
+            "name": "Python: Django",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/manage.py",
+            "args": [
+                "runserver",
+                "9000"
+            ],
+            "django": true,
+            "justMyCode": true
         }
     ]
 }

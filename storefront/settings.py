@@ -51,6 +51,13 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "debug_toolbar.middleware.DebugToolbarMiddleware",
+]
+
+INTERNAL_IPS = [
+    # ...
+    "127.0.0.1",
+    # ...
 ]
 
 ROOT_URLCONF = 'storefront.urls'
@@ -135,5 +142,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Add your apps here
     'playground',  # Assuming this is your app
+    'debug_toolbar',  # Add the debug toolbar app
 ]
 
