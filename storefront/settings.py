@@ -143,5 +143,10 @@ INSTALLED_APPS = [
     # Add your apps here
     'playground',  # Assuming this is your app
     'debug_toolbar',  # Add the debug toolbar app
+    'users',
+    'products',
+    'orders',
+    'payments',
+    'shipping',
 ]
 
