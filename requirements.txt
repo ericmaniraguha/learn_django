@@ -1,0 +1,30 @@
+# Django Learning Project
+
+## Overview
+
+This project is a simple Django application designed to help you learn the basics of Django, including setting up a project, creating views, and routing URLs. The project includes a main app called `playground` with a couple of example views.
+
+## Key Features of Django
+
+1. **The Admin Site**
+    - Built-in admin interface to manage database models.
+    - Highly customizable and extendable.
+
+2. **Object-Relational Mapper (ORM)**
+    - Interact with the database using Python code.
+    - Supports multiple database backends like PostgreSQL, MySQL, SQLite, and Oracle.
+
+3. **Authentication**
+    - Robust authentication system handling user accounts, groups, permissions, and sessions.
+    - Includes views and forms for logging in, logging out, and password management.
+
+4. **Caching**
+    - Caching framework to speed up the website by storing frequently accessed data in memory.
+    - Supports various cache backends, including Memcached, Redis, and database caching.
+
+## Setup Instructions
+
+### 1. Start a New Django Project
+
+```bash
+django-admin startproject storefront .
